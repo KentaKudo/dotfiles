@@ -28,7 +28,7 @@ fi
 cd "$DOTFILES_DIR"
 
 echo "==> Activating Home Manager from flake"
-nix run .#homeConfigurations."$USER@$(hostname)".activationPackage
+nix run home-manager -- switch --flake .
 
 echo ""
 echo "✅ Done. Restart your shell."
