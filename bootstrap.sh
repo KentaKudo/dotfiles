@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO_URL="https://github.com/<YOUR_GITHUB>/<YOUR_REPO>.git"
+REPO_URL="https://github.com/KentaKudo/dotfiles.git"
 DOTFILES_DIR="$HOME/dotfiles"
 
 echo "==> Installing Nix (Determinate Systems installer)"
