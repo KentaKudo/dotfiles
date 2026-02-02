@@ -12,8 +12,6 @@ The goal is simple:
 
 No Homebrew. No manual dotfile copying. No ordering issues.
 
----
-
 ## 🚀 Bootstrap a new machine (macOS / Linux)
 
 On a fresh machine, run:
@@ -33,8 +31,6 @@ When it finishes, **restart your shell**.
 
 You are done.
 
----
-
 ## 🧠 What this repo manages
 
 Everything is declarative via Home Manager:
@@ -48,13 +44,12 @@ Everything is declarative via Home Manager:
 
 The machine only needs to be capable of running `nix`.
 
----
-
 ## 🔄 Apply changes after editing config
 
 After changing `flake.nix`, `home.nix`, etc.:
 
 ```bash
+git add .
 hms
 ```
 
