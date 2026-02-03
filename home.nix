@@ -34,7 +34,7 @@
         };
 
         shellAliases = {
-            hms = "home-manager switch --flake /Users/kentakudo/dotfiles";
+            hms = "home-manager switch --flake ${config.home.homeDirectory}/dotfiles";
             # ghq + peco https://gfx.hatenablog.com/entry/2017/07/26/104634
             g = "cd $(ghq root)/$(ghq list | peco)";
             v = "code $(ghq root)/$(ghq list | peco)";
