@@ -45,6 +45,13 @@
             # ssh + peco https://qiita.com/d6rkaiz/items/46e9c61c412c89e84c38
             # s = "ssh $(grep -iE \"^host[[:space:]]+[^*]\" ~/.ssh/config|peco|awk \"{print \\$2}\")";
         };
+
+        initContent = ''
+            # Load per-machine overrides if present
+            if [ -f "$HOME/.zshrc.local" ]; then
+                source "$HOME/.zshrc.local"
+            fi
+        '';
     };
 
     programs.tmux = {
