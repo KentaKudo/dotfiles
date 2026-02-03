@@ -5,6 +5,7 @@
     home.homeDirectory = "/Users/kentakudo";
 
     home.packages = with pkgs; [
+        direnv
         ghq
         go
         jq
