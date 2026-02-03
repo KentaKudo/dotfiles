@@ -15,11 +15,13 @@
     ];
 
     home.sessionVariables = {
+        GOPATH = "${config.home.homeDirectory}/go";
         VOLTA_HOME = "${config.home.homeDirectory}/.volta";
     };
 
     home.sessionPath = [
         "${config.home.homeDirectory}/.local/bin"
+        "$GOPATH/bin"
         "${config.home.homeDirectory}/.volta/bin"
     ];
 
