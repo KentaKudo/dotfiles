@@ -10,6 +10,7 @@
         ghq
         go
         jq
+        mise
         peco
         ripgrep
         volta
@@ -48,6 +49,9 @@
         };
 
         initContent = ''
+            # Initialize mise
+            eval "$(mise activate zsh)"
+
             # Load per-machine overrides if present
             if [ -f "$HOME/.zshrc.local" ]; then
                 source "$HOME/.zshrc.local"
